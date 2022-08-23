@@ -1,7 +1,7 @@
 <?php
 
    class ModelPrivilege extends CRUD{
-       protected $table = 'privilege';
+       protected $table = 'Privilege';
        protected $primaryKey = 'id';
 
        protected $fillable = ['privilege'];
