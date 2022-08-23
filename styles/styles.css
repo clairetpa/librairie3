@@ -1,0 +1,379 @@
+/* cette page regroupe tout les styles css */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+}
+
+header {
+    background-image: url("../images/hero-img.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+.hero-title {
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+nav {
+    width: 94%;
+    background-color: #23283e;
+    color: #efeff4;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 3% 20px 3%;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #efeff4;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: #efeff4;
+}
+
+.nav-left {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    
+}
+
+
+body {
+    background-color: #efeff4;
+}
+
+main {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.livre {
+    display: flex;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: grey;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.livre__detail {
+    display: flex;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-direction: column;
+    width: 60%;
+}
+
+.livre__image{
+    width: 40%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.livre__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.livre__auteur {
+    font-style: italic;
+}
+
+.livre__annee {
+    padding-top: 1em;
+}
+
+.livre__genre {
+    padding-top: 1em;
+}
+
+.livre__editer {
+    padding-top: 2em;
+    text-align: end;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #23283e;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #23283e;
+    color: white;
+}
+
+.grid-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.wrapper{
+    width: 80%;
+    margin:auto
+}
+
+.form {
+    display: flex;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: grey;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: white;
+}
+
+
+.form-left {
+    width: 60%;
+    padding: 10px 20px 0px 30px;
+}
+
+.form-right {
+    width: 40%;
+}
+
+.image-livre-wrapper{
+    width: 80%;
+    height: 400px;
+    padding: 10px 10% 10% 10px;
+}
+
+.image-livre{
+    width: 100%;
+    height: 100%;
+}
+
+.form__item {
+    display: flex;
+}
+
+.label {
+    width: 80px;
+    text-align: right;
+    padding: 5px 5px 0px 0px;
+    height: 1.5em;
+}
+
+.input {
+    width: 80px;
+    padding: 5px 5px 0px 0px;
+}
+
+input {
+    width: 200px;
+    height: 1.5em;
+}
+
+select {
+    width: 208px;
+    height: 2em;
+}
+
+.submit {
+    background-color: white;
+    color: black;
+    border: 2px solid #23283e;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.submit:hover {
+    background-color: #23283e;
+    color: white;
+}
+
+.supprimer {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.supprimer:hover {
+    background-color: red;
+    color: white;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.spacing {
+    padding-top: 40px;
+}
+
+.error {
+    color: red;
+}
+
+.flex{
+    display: flex;
+
+}
+
+.btn-small {
+    background-color: white;
+    color: black;
+    border: 2px solid #23283e;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.btn-small:hover {
+    background-color: #23283e;
+    color: white;
+}
+
+/* formulaire de connection */
+
+.login-title{
+    font-size: 18px;
+    padding: 25px 0px;
+
+} 
+
+.login-subtitle{
+    font-size: 14px;
+    padding: 15px 0px;
+
+}
+
+ .login-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px auto 10px auto;
+
+/*     width: 70%;
+    height: auto;
+    background-color: aqua; */
+
+}
+
+
+.login-input-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+}
+
+/* gauche */
+.label-container{
+    width: 50%;
+
+}
+
+/* droite */
+.input-container{
+    width: 50%;
+    
+}
+
+.login-input{
+    padding: 5px 0px 5px 0px;
+}
+
+.login-button-container{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-label{
+    padding: 5px 0px 5px 0px;
+}
+
+.login-button{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    color: #23283e;
+
+}
+.login-button:hover{
+    background-color: #23283e;
+    color: white;
+
+}
+
+input:disabled{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+select:disabled{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+textarea:disabled {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+td {
+    text-align: left;
+    margin-right: 10px;
+}
+
+th {
+    text-align: left;
+    margin-right: 10px;
+}
+
+table {
+    width: 80%;
+}
+
